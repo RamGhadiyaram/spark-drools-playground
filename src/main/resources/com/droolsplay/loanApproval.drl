@@ -1,0 +1,12 @@
+package com.droolsplay;
+/**
+  * @author : Ram Ghadiyaram
+  */
+import com.droolsplay.ApplicantForLoan
+
+rule "Approve_Good_Credit"
+  when
+    a: ApplicantForLoan(creditScore >= 680)
+  then
+    a.setApproved(true);
+end
