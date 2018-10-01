@@ -2,7 +2,7 @@ package com.droolsplay
 
 import com.droolsplay.util.DroolUtil._
 import com.droolsplay.util.SparkSessionSingleton
-import org.apache.spark.SparkConf
+import org.apache.log4j.{Level, Logger}
 import org.apache.spark.internal.Logging
 import org.apache.spark.sql.functions._
 
@@ -10,7 +10,8 @@ import org.apache.spark.sql.functions._
   * @author : Ram Ghadiyaram
   */
 object App extends Logging {
-
+  Logger.getLogger("org").setLevel(Level.OFF)
+  Logger.getLogger("akka").setLevel(Level.OFF)
   def main(args: Array[String]): Unit = {
     // prepare some funny input data
     val inputData = Seq(
@@ -33,7 +34,7 @@ object App extends Logging {
       , ApplicantForLoan(18, "Phanindra", "Ramavojjala", 100, 671)
     )
 
-    val spark = SparkSessionSingleton.getInstance()
+    val spark = SparkSessionSingleton.getInstance(None)
     val rules = loadRules
     val broadcastRules = spark.sparkContext.broadcast(rules)
     val applicants = spark.sparkContext.parallelize(inputData)
@@ -54,7 +55,7 @@ object App extends Logging {
         logDebug(x.toString)
         applyRules(broadcastRules.value, x)
       }
-    }.filter((a: ApplicantForLoan) => (a.isApproved == true))
+    }.filter((a: ApplicantForLoan) => a.isApproved)
     logInfo("approvedguys " + approvedguys.getClass.getName)
     approvedguys.toDS.withColumn("Remarks", lit("Good Going!! your credit score =>680 check your score in https://www.creditkarma.com")).show(false)
 
@@ -76,7 +77,7 @@ object App extends Logging {
           , row.getAs[Int]("requestAmount")
           , row.getAs[Int]("creditScore"))
       )
-    }.filter((a: ApplicantForLoan) => (a.isApproved == false))
+    }.filter((a: ApplicantForLoan) => !a.isApproved)
 
     logInfo("notApprovedguys " + notApprovedguys.getClass.getName)
 

@@ -25,9 +25,9 @@ object DroolUtil extends Logging {
   /**
     * applyRules.
     *
-    * @param base
-    * @param applicant
-    * @return ApplicantForLoan
+    * @param base      see [[KieBase]]
+    * @param applicant see [[ApplicantForLoan]]
+    * @return ApplicantForLoan see [[ApplicantForLoan]]
     */
   def applyRules(base: KieBase, applicant: ApplicantForLoan): ApplicantForLoan = {
     val session = base.newStatelessKieSession
@@ -39,11 +39,11 @@ object DroolUtil extends Logging {
   /**
     * checkDFSize
     *
-    * @param spark
-    * @param applicantsDS
-    * @return
+    * @param spark        [[SparkSession]]
+    * @param applicantsDS [[DataFrame]]
+    * @return Long
     */
-  def checkDFSize(spark: SparkSession, applicantsDS: DataFrame) = {
+  def checkDFSize(spark: SparkSession, applicantsDS: DataFrame): Long = {
     applicantsDS.cache.foreach(x => x)
     val catalyst_plan = applicantsDS.queryExecution.logical
     // just to check dataframe size
@@ -59,13 +59,13 @@ object SparkSessionSingleton extends Logging {
   val logger = Logger.getLogger(this.getClass.getName)
   @transient private var instance: SparkSession = _
 
-  def getInstance(): SparkSession = {
+  def getInstance(appName: Option[String]): SparkSession = {
     logDebug(" instance " + instance)
     if (instance == null) {
       instance = SparkSession
         .builder
         .config("spark.master", "local") //.config("spark.eventLog.enabled", "true")
-        .appName("AppDroolsPlayGroundWithSpark")
+        .appName(appName.getOrElse("AppDroolsPlayGroundWithSpark"))
         .getOrCreate()
     }
     instance
