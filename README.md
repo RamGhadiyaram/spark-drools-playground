@@ -2,6 +2,9 @@
 
 Just an attempt to mentor learners of Spark with Jboss Drools(https://www.drools.org/). 
 
+What is Drools?
+A: Drools is a Business Rules Management System (BRMS) solution. Using this framework users define rules that specify what action needs to be done when a particular condition is met.It extends and implements the Rete Pattern matching algorithm. In projects its usually used to define Business Rules. Business rules are composed of facts and conditional statements.
+
 Problem : If you need to apply lot of rules based on udf its very complex to maintain since lot of 
 if else but then and so on....
 
