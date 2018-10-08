@@ -30,6 +30,7 @@ object App extends Logging {
       , ApplicantForLoan(15, "Gobinathan", "SP", 1005, 7)
       , ApplicantForLoan(16, "Arindam", "SenGupta", 1005, 670)
       , ApplicantForLoan(17, "NIKHIL", "POTLAPALLY", 100, 670)
+     , ApplicantForLoan(18, "Phanindra", "Ramavojjala", 100, 670)
     )
 
     val spark = SparkSessionSingleton.getInstance()
