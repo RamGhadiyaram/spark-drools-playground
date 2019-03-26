@@ -3,18 +3,38 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.droolsplay</groupId>
-    <artifactId>spark-drools-playground</artifactId>
+    <artifactId>spark-general-examples</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <inceptionYear>2018</inceptionYear>
-    <name>ScalaSparkDroolsExample</name>
-    <url>http://www.github.com/ramghadiyaram/ScalaSparkDroolsExample</url>
+    <name>ScalaGenarlExample</name>
+    <url></url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <scala.version>2.11.12</scala.version>
+        <scala.version>2.11.8</scala.version>
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.databricks/spark-avro -->
+        <dependency>
+            <groupId>com.databricks</groupId>
+            <artifactId>spark-avro_2.11</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.databricks/spark-xml -->
+        <dependency>
+            <groupId>com.databricks</groupId>
+            <artifactId>spark-xml_2.11</artifactId>
+            <version>0.4.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.15</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-compiler</artifactId>
@@ -45,12 +65,12 @@
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_2.11</artifactId>
-            <version>2.3.1</version>
+            <version>2.2.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-sql_2.11</artifactId>
-            <version>2.3.1</version>
+            <version>2.2.1</version>
         </dependency>
         <dependency>
             <groupId>commons-collections</groupId>

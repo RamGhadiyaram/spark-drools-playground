@@ -1,7 +1,7 @@
 package com.examples
 
 
-import com.droolsplay.util.SparkSessionSingleton
+import com.examples.DataFrameUtil.SparkSessionSingleton
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.internal.Logging
 import org.apache.spark.sql.functions._
