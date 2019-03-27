@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77d1d342-5ee9-476c-aab9-ff769ca33297" name="Default Changelist" comment="Spark Genaral Examples">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="771912301">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.345" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.83" value="1" />
+          <entry key="project.open.time.97" value="1" />
+          <entry key="project.opened" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="4" />
+          <entry key="md" value="1" />
+          <entry key="scala" value="18" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="4" />
+          <entry key="Markdown" value="1" />
+          <entry key="Scala" value="18" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="scala" value="1498" />
+          <entry key="txt" value="31" />
+          <entry key="xml" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="Scala" value="1498" />
+          <entry key="XML" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/DistributedDataIndex.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="143" column="82" selection-start-line="143" selection-start-column="77" selection-end-line="143" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/streaming/CSVStream.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/CSVStringToDF.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#22#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/PairedRDDPlay.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/DataFrameUtil.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/SimpleApp.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="e#22#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/JoinExamples.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/JoinExamplesv2.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/SampleDataSet.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2737">
+              <caret line="161" column="7" selection-start-line="161" selection-start-column="7" selection-end-line="161" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SparkSessionSingleton</find>
+      <find>desc</find>
+      <find>package com\.examples\n\n\nimport com\.examples\.DataFrameUtil\._\n\nimport com\.examples\.SampleDataSet\._\nimport com\.google\.gson\.JsonParser\nimport org\.apache\.log4j\.\{Level\, Logger\}\nimport org\.apache\.spark\.rdd\.RDD\nimport org\.apache\.spark\.sql\._\nimport org\.apache\.spark\.sql\.functions\._\nimport org\.apache\.spark\.sql\.types\.\{IntegerType\, StringType\, _\}\n\nimport scala\.util\.\{Random\, Success\, Try\}\n\n\n\/\*\*\n  \*\n  \* \@author \: Ram\.Ghadiyaram\n  \*\n  \*\/\n\nobject DataSetGenerator \{\n\n\n  val logger \= Logger\.getLogger\(this\.getClass\.getName\)\n\n  Logger\.getLogger\(\&quot;org\&quot;\)\.setLevel\(Level\.WARN\)\n\n  val intArray \= \(1 to 999\)\.toSeq \/\/Array\(1\, 2\, 3\, 4\, 5\, 6\)\n\n  val longArray \= \(1L to 999L\)\.toSeq\n\n\n  val rangelist \= intArray\.mkString\(\&quot;\:\&quot;\)\n\n  val myRandomStringArray \= Array\(\&quot;Long Live Floga \&quot; \+ rangelist\n\n    \, \&quot;Long Live Testing 1 \&quot; \+ rangelist\n\n    \, \&quot;Long Live Testing 2 \&quot; \+ rangelist\, null\)\n\n\n  \/\*\* \*\n    \*\n    \*\n    \*\n    \* \&lt;pre\&gt;\n    \*\n    \* res19\: org\.apache\.spark\.sql\.types\.StructType \= StructType\(StructField\(businessColumnName\,StringType\,true\)\, StructField\(columnOrder\,LongType\,true\)\, StructField\(type\,StringType\,true\)\)\n    \*\n    \*\n    \*\n    \* \/\* \+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\+\-\-\-\-\-\-\-\-\-\-\-\+\-\-\-\-\-\-\-\-\-\+\n    \*\n    \* \| businessColumnName\|columnOrder\|   type\|\n    \*\n    \* \+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\+\-\-\-\-\-\-\-\-\-\-\-\+\-\-\-\-\-\-\-\-\-\+\n    \*\n    \* \|     APPN_DIM_ID\|     0\|   INT\|\n    \*\n    \* \|    SRC_PRIM_KEY\|     1\|  STRING\|\n    \*\n    \* \|       SOR_ID\|     2\|   INT\|\n    \*\n    \* \|    LEGL_AFIL_CD\|     3\|  STRING\|\n    \*\n    \* \|    COAF_PUBLN_ID\|     4\|   INT\|\n    \*\n    \* \|       BUS_DT\|     5\|   INT\|\n    \*\n    \* \|       BUS_TS\|     6\|TIMESTAMP\|\n    \*\n    \* \|    ELT_AUDT_TAG\|     7\|   JSON\|\n    \*\n    \* \| CRET_BY_USER_DIM_ID\|     8\|   INT\|\n    \*\n    \* \|DLR_CNTRT_ACTN_LK\.\.\.\|     9\|   INT\|\n    \*\n    \* \|      INVTGN_ID\|     10\|   INT\|\n    \*\n    \* \|       SEQ_NUM\|     11\|   INT\|\n    \*\n    \* \|   CRET_BY_USER_NM\|     12\|  STRING\|\n    \*\n    \* \|       CRET_DT\|     13\|TIMESTAMP\|\n    \*\n    \* \|      INVTGR_ID\|     14\|   INT\|\n    \*\n    \* \|       UPDT_DT\|     15\|TIMESTAMP\|\n    \*\n    \* \|       APPN_ID\|     16\|   INT\|\n    \*\n    \* \|   CRET_BY_USER_ID\|     17\|   INT\|\n    \*\n    \* \|DLR_CNTRT_ACTN_LK\.\.\.\|     18\|   INT\|\n    \*\n    \* \+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\+\-\-\-\-\-\-\-\-\-\-\-\+\-\-\-\-\-\-\-\-\-\+ \*\/\n    \* \|\-\-\-\-\-\-\-root\n    \*\n    \* \|\-\- APPN_DIM_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- SRC_PRIM_KEY\: string \(nullable \= false\)\n    \*\n    \* \|\-\- SOR_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- LEGL_AFIL_CD\: string \(nullable \= false\)\n    \*\n    \* \|\-\- COAF_PUBLN_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- BUS_DT\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- BUS_TS\: timestamp \(nullable \= false\)\n    \*\n    \* \|\-\- APPN_DIM_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- SRC_PRIM_KEY\: string \(nullable \= false\)\n    \*\n    \* \|\-\- SOR_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- LEGL_AFIL_CD\: string \(nullable \= false\)\n    \*\n    \* \|\-\- COAF_PUBLN_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- BUS_DT\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- BUS_TS\: timestamp \(nullable \= false\)\n    \*\n    \* \|\-\- ELT_AUDT_TAG\: string \(nullable \= false\)\n    \*\n    \* \|\-\- CRET_BY_USER_DIM_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- DLR_CNTRT_ACTN_LKP_DIM_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- INVTGN_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- SEQ_NUM\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- CRET_BY_USER_NM\: string \(nullable \= false\)\n    \*\n    \* \|\-\- CRET_DT\: timestamp \(nullable \= false\)\n    \*\n    \* \|\-\- INVTGR_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- UPDT_DT\: timestamp \(nullable \= false\)\n    \*\n    \* \|\-\- APPN_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- CRET_BY_USER_ID\: integer \(nullable \= false\)\n    \*\n    \* \|\-\- DLR_CNTRT_ACTN_LKP_ID\: integer \(nullable \= false\)\n    \*\n    \* \&lt;\/pre\&gt;\n    \*\n    \* \@param args\n    \*\n    \*\/\n\n  def main\(args\: Array\[String\]\)\: Unit \= \{\n\n    val spark\: SparkSession \= SparkSession\.builder\(\)\.appName\(this\.getClass\.getName\)\.master\(\&quot;local\[\*\]\&quot;\)\.getOrCreate\(\)\n\n\n    require\(args\.length \&lt;\= 4\,\n\n      s\&quot;\&quot;\&quot;\n\n         \| Usage \: \&lt;positive percent\&gt;  \&lt;Num Rows to be generated\&gt; \&lt;fileformat\[s\]\&gt; \&lt;numberof Files to be generated\n\n         \| Current values are \: \$\{args\.foreach\(println\)\}\n\n   \&quot;\&quot;\&quot;\.stripMargin\)\n\n\n    val positiveRecordpercent \= if \(args\.length \&gt; 0\) args\(0\)\.toDouble else \.75\n\n    require\(positiveRecordpercent \&lt; 1\,\n\n      s\&quot;\&quot;\&quot;\n\n         \|\n\n    \| If its 75\% then 0\.75 need to be passed remaining 25\% i\.e\. 0\.25 will be negetive cases\.\n\n         \| Current value passed \: \$positiveRecordpercent\n\n   \&quot;\&quot;\&quot;\.stripMargin\)\n\n\n    val numberOfRowsToBeGenerated \= if \(args\.length \&gt; 0\) args\(1\)\.toInt else 10\n\n    val format \= if \(args\.length \&gt; 0\) args\(2\)\.toString\.toUpperCase else \&quot;ALL\&quot;\n\n    val numberOfPartFilesToBeGenerated \= if \(args\.length \&gt; 0\) args\(3\)\.toInt else 1\n\n\n    val sc \= spark\.sparkContext\n\n    val o \= new JsonParser\(\)\.parse\(testdatasets\)\.getAsJsonObject\n\n    val b \= o\.getAsJsonArray\(\&quot;columns\&quot;\)\.toString\nimport spark\.implicits\._\n    logger\.info\(b\)\n\n    \/\*\* If we are using \&gt; \=spark 2\.2 \*\*\/\n\n    val dataFrameFromJson \= spark\.read\.json\(Seq\(b\)\.toDS\(\)\)\n\n    \/\*\* If we are using \&lt; spark 2\.2 \*  val rdd \= sc\.parallelize\(Seq\(b\)\)  val df \= spark\.read\.json\(rdd\) \*\*\/\n\n\n    val dataFrameOfRequiredColumns \= dataFrameFromJson\.selectExpr\(\&quot;businessColumnName\&quot;\, \&quot;columnOrder\&quot;\, \&quot;type\&quot;\, \&quot;length\&quot;\)\n\n    dataFrameOfRequiredColumns\.show\n\n    dataFrameOfRequiredColumns\.printSchema\(\)\n\n\n    val keyedBy \= dataFrameOfRequiredColumns\.rdd\.keyBy\(_\.getAs\[Long\]\(\&quot;columnOrder\&quot;\)\)\n\n    keyedBy\.foreach\(x \=\&gt; logger\.info\(\&quot;using keyBy\-\-\&gt;\&gt;\&quot; \+ x\)\)\n\n    val mySortedMapByColOrder \= scala\.collection\.immutable\.TreeMap\(keyedBy\.collectAsMap\(\)\.toArray\: _\*\)\n\n\n    val list \= scala\.collection\.mutable\.ListBuffer\.empty\[StructField\]\n\n\n    for \(\(key\, value\) \&lt;\- mySortedMapByColOrder\) \{\n\n      list \+\= StructField\(value\.get\(0\)\.toString\,\n\n        createStruct\(value\.get\(2\)\.toString\)\, false\)\n\n    \}\n\n    logger\.debug\(\&quot;list is \&quot; \+ list\.toList\)\n\n    val schema \= StructType\(list\.toList\)\n\n    logger\.info\(\&quot;schema\.treeString \-\-\-\-\-\&quot; \+ schema\.treeString\)\n\n\n\n\n\n    \/\/val replicatedDf1 \= replicateDf\(100\, testDf\)\n\n    \/\/ logger\.info\(\&quot;\-\-\-\-\-\&quot; \+ schema\.treeString\)\n\n\n    \/\/ creating data from sample values\n\n    val list1 \= scala\.collection\.mutable\.ListBuffer\.empty\[Any\]\n\n\n\n    \/\/val schema1 \= list1\.toList\n\n\n    for \(\(key1\, value1\) \&lt;\- mySortedMapByColOrder\) \{\n\n      logger\.info\(value1\)\n\n      val value \= if \(value1\.get\(2\) \=\= null\) \&quot;\&quot; else value1\n\n      logger\.info\(value\)\n\n      logger\.info\(\&quot;value1\.getAs\[Long\]\(\\\&quot;length\\\&quot;\)\&quot; \+ value1\.getAs\[Long\]\(\&quot;length\&quot;\)\)\n\n      val valueOfLength\: Int \= Try\(value1\.getAs\[Long\]\(\&quot;length\&quot;\)\) match \{\n\n        case Success\(s\) \=\&gt; s\.toString\.toInt\n\n        case _ \=\&gt; logger\.info\(\&quot;error \:value1\.getAs\[Long\]\(\\\&quot;length\\\&quot;\) is null\&quot;\)\; 0\n\n      \}\n\n      list1 \+\= createTestData\(value\.toString\, valueOfLength\)\n\n    \}\n\n    var row \= Row\.fromSeq\(list1\.toSeq\)\n\n    row \= Row\.fromSeq\(list1\.toSeq\)\n\n    logger\.info\(\&quot;list is \&quot; \+ list1\)\n\n    val testdatadf\: RDD\[Row\] \= spark\.sparkContext\.parallelize\(Seq\(row\)\)\n\n    logger\.info\(\&quot;printing each row \&quot;\)\n\n    testdatadf\.foreach\(logger\.info\)\n\n    val testdf\: DataFrame \= spark\.createDataFrame\(testdatadf\, schema\)\n\n    logger\.info\(\&quot;row is \&quot; \+ row\.getClass\.getName \+ \&quot;\-\-\-\-\-\&gt; \&quot; \+ row\)\n\n    testdf\.show\n\n    testdf\.printSchema\(\)\n\n    logger\.info\(\&quot;\:\:\:\:\:\:\:Experiment to replicate data\!\!\!\&quot;\)\n\n    val dfReplicated \= replicateOneRowManytimes\(numberOfRowsToBeGenerated\, testdf\)\n\n    \/\/val df2 \= arrayOfReplicated\(1\)\.withColumn\(\&quot;\&quot;\,\&quot;\&quot;\)\;\n\n\n    val ided \= addColumnIndex\(dfReplicated\, \&quot;index\&quot;\)\n\n    moveColumnToFirstPos\(ided\, \&quot;index\&quot;\)\n\n    val \(training\, test1\) \= splitDF\(dfReplicated\, positiveRecordpercent\, 1 \- positiveRecordpercent\)\n\n    val mycols \= test1\.schema\.fields\n\n    var test \= test1\;\n\n    mycols\.foreach\(x \=\&gt; \{\n\n      test \=\n\n        x\.dataType match \{\n\n          case IntegerType \=\&gt; test\.withColumn\(x\.name\, lit\(intArray\(Random\.nextInt\(intArray\.size\)\)\)\)\n\n          case StringType \=\&gt; test\.withColumn\(x\.name\, lit\(myRandomStringArray\(Random\.nextInt\(myRandomStringArray\.size\)\)\)\)\n\n          case LongType \=\&gt; test\.withColumn\(x\.name\, lit\(Random\.nextLong\(\)\)\)\n\n          case DoubleType \=\&gt; test\.withColumn\(x\.name\, lit\(Random\.nextDouble\(\)\)\)\n\n          case FloatType \=\&gt; test\.withColumn\(x\.name\, lit\(Random\.nextFloat\(\)\)\)\n\n          \/\/case TimestampType \=\&gt; test \/\/\.withColumn\(x\.name\, Timestamp\.valueOf\(\&quot;2017\-12\-02 03\:04\:00\&quot;\)\)\n\n          case _ \=\&gt; test\n\n\n        \}\n\n    \}\)\n\n    val finaldf \= training\.union\(test\)\n\n    logger\.info\(finaldf\.count\(\)\)\n\n    test\.show\(false\)\n\n    finaldf\.printSchema\(\)\n\n    finaldf\.show\(false\)\n\n\n    val dfToWrite \= finaldf\.coalesce\(numberOfPartFilesToBeGenerated\)\.write\.mode\(SaveMode\.Overwrite\)\n\n    val allFormats \= Array\(\&quot;PARQUET\&quot;\, \&quot;AVRO\&quot;\, \&quot;CSV\&quot;\, \&quot;JSON\&quot;\, \&quot;XML\&quot;\)\n\n    format match \{\n\n      case \&quot;ALL\&quot; \=\&gt; \{\n\n        logger\.info\(s\&quot;Writing all formats \$\{allFormats\.mkString\(\&quot;\\n\&quot;\)\} \&quot;\)\;\n\n        allFormats\.foreach\(formatType \=\&gt; writeToFileFormats\(formatType\, dfToWrite\)\)\;\n\n      \}\n\n      case _ \=\&gt; \{\n\n        logger\.info\(s\&quot;Writing \$format format \} \&quot;\)\;\n\n        writeToFileFormats\(format\, dfToWrite\)\n\n      \}\n\n\n    \} \/\/end of main\n\n  \}\n\n\}</find>
+      <find>Floga</find>
+      <find>stat_descr</find>
+      <find>nebuladatagenerator</find>
+      <find>&quot;type&quot;</find>
+      <find>status_description</find>
+      <find>case _</find>
+      <find>testdata</find>
+      <find>cretd_by_txt</find>
+      <find>test</find>
+      <find>businessColumnName</find>
+      <find>newDFs</find>
+      <find>package com\.examples\n\n  import org\.apache\.spark\.sql\.\{DataFrame\, Dataset\, SparkSession\, functions\}\n  import org\.apache\.spark\.sql\.functions\.\{lit\, _\}\nobject CSVStringToDF extends App\{\n  val spark \= SparkSession\.builder\(\)\.appName\(\&quot;CSVStringToDF\&quot;\)\.master\(\&quot;local\&quot;\)\.getOrCreate\(\)\n\n  import spark\.implicits\._\n\nval csvdata \: Dataset\[String\] \= spark\.sparkContext\.parallelize\(\n  \&quot;\&quot;\&quot;\n    \|2cbeb5cb\-219c\-4a84\-b0b1\-fa13de0cbbd4\,abc\,2019\-03\-22 17\:24\:17\.484\,xyz\,some\,N\,\{\&quot;a\&quot;\:\&quot;b0f44820\-1b20\-40cb\-8bdf\-0e70feb2f599\&quot;\,\&quot;b\&quot;\:\&quot;02012019\&quot;\,\&quot;c\&quot;\:\&quot;0000000003218\&quot;\,\&quot;d\&quot;\:\&quot;M\&quot; \}\n    \|154eec60\-9f08\-4f27\-a738\-a0805bda5377\,abc\,2019\-03\-22 17\:24\:17\.484\,xyz\,some\,N\,\{\&quot;a\&quot;\:\&quot;283f6465\-7f9d\-4bde\-81b2\-8038ad88e7ed\&quot;\,\&quot;b\&quot;\:\&quot;02012019\&quot;\,\&quot;c\&quot;\:\&quot;0000000029021\&quot;\,\&quot;d\&quot;\:\&quot;M\&quot; \}\n  \&quot;\&quot;\&quot;\.stripMargin\.lines\.toList\)\.toDS\(\)\n  val frame\: DataFrame \= spark\.read\n    \.option\(\&quot;header\&quot;\, false\)\.option\(\&quot;inferSchema\&quot;\,true\)\n    \.option\(\&quot;escape\&quot;\, \&quot;\\\\\&quot;\)\n   \/\/ \.option\(\&quot;quoteMode\&quot;\, \&quot;ALL\&quot;\)\n    \.csv\(csvdata\)\n    val frame1 \= frame\.withColumn\(\&quot;jsoncolumn\&quot;\n      \,functions\.concat\(functions\.col\(\&quot;_c6\&quot;\)\,lit\(\&quot;\,\&quot;\)\, functions\.col\(\&quot;_c7\&quot;\)\,lit\(\&quot;\,\&quot;\)\,functions\.col\(\&quot;_c8\&quot;\)\n        \,lit\(\&quot;\,\&quot;\)\,functions\.col\(\&quot;_c9\&quot;\)\)\)\n  frame1\.show\(false\)\n  frame1\.printSchema\(\)\n\}\n</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>గ్1</replace>
+      <replace />
+      <replace>testdatasetgen</replace>
+      <replace>status_description</replace>
+      <replace>notes</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Ram G" />
+      </list>
+    </option>
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/JoinExamples.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/JoinExamplesv2.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/SampleDataSet.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/DataFrameUtil.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/DataSetGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/test.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/SimpleApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/HDFSUtil.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/ParquetPlay.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/DataFrameTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/examples/CSVStringToDF.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ScalaGenarlExample" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ScalaGenarlExample" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="125" />
+    <option name="y" value="125" />
+    <option name="width" value="1600" />
+    <option name="height" value="710" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spark-drools-playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-general-examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-drools-playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-general-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-drools-playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-general-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-drools-playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-general-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-drools-playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-general-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-drools-playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-general-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="droolsplay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-drools-playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-general-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spark-drools-playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark-general-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../allaboutscala-master" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.examples" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CSVStringToDF">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CSVStringToDF" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.examples.CSVStringToDF" />
+      <module name="spark-general-examples" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataFrameTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.examples.DataFrameTest" />
+      <module name="spark-general-examples" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataSetGenerator" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.examples.DataSetGenerator" />
+      <module name="spark-general-examples" />
+      <option name="PROGRAM_PARAMETERS" value="1 1 ALL 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParquetPlay" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.examples.ParquetPlay" />
+      <module name="spark-general-examples" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleApp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.examples.SimpleApp" />
+      <module name="spark-general-examples" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DataSetGenerator" />
+      <item itemvalue="Application.DataFrameTest" />
+      <item itemvalue="Application.SimpleApp" />
+      <item itemvalue="Application.ParquetPlay" />
+      <item itemvalue="Application.CSVStringToDF" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CSVStringToDF" />
+        <item itemvalue="Application.DataFrameTest" />
+        <item itemvalue="Application.ParquetPlay" />
+        <item itemvalue="Application.SimpleApp" />
+        <item itemvalue="Application.DataSetGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../learning-spark-master/learning-spark" value="1521340269554" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../calcite-arrow-sample" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../calcite-arrow-sample-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../practise/spark2.0-examples-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../spark-master (1)/spark-master" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77d1d342-5ee9-476c-aab9-ff769ca33297" name="Default Changelist" comment="" />
+      <created>1548042694534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548042694534</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Spark Genaral Examples">
+      <created>1553567516026</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553567516026</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Spark Genaral Examples">
+      <created>1553567717424</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553567717424</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.44697988" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9956076" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39824304" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.329429" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32796487" />
+      <window_info anchor="bottom" id="SBT Console" order="11" />
+      <window_info anchor="bottom" id="SBT Execute" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="ASM" order="4" show_stripe_button="false" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32885906" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.44697988" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9956076" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39824304" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32796487" />
+      <window_info anchor="bottom" id="SBT Console" order="11" />
+      <window_info anchor="bottom" id="SBT Execute" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="ASM" order="4" show_stripe_button="false" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32885906" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Spark Genaral Examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spark Genaral Examples" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/examples/DataSetGenerator.scala</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/examples/ParquetPlay.scala</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.1/spark-core_2.11-2.2.1.jar!/org/apache/spark/SparkContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/DataSetGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding>
+            <element signature="e#23#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.1/spark-core_2.11-2.2.1-sources.jar!/org/apache/spark/SparkContext.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="86" column="15" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.1/spark-core_2.11-2.2.1-sources.jar!/org/apache/spark/SparkConf.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139">
+          <caret line="66" column="18" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.6.5/hadoop-common-2.6.5-sources.jar!/org/apache/hadoop/fs/FileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="1622" column="5" selection-start-line="1566" selection-end-line="1623" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/ParquetPlay.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="e#22#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/HDFSUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="e#23#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/DataFrameTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding>
+            <element signature="e#22#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/SimpleApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#22#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/JoinExamples.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/JoinExamplesv2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/SampleDataSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="161" column="7" selection-start-line="161" selection-start-column="7" selection-end-line="161" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/DistributedDataIndex.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="143" column="82" selection-start-line="143" selection-start-column="77" selection-end-line="143" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/streaming/CSVStream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.2.1/spark-sql_2.11-2.2.1.jar!/org/apache/spark/sql/DataFrameReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.2.1/spark-sql_2.11-2.2.1-sources.jar!/org/apache/spark/sql/DataFrameReader.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.2.1/spark-sql_2.11-2.2.1-sources.jar!/org/apache/spark/sql/functions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="2156" column="6" selection-start-line="2156" selection-start-column="6" selection-end-line="2156" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/CSVStringToDF.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#22#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/PairedRDDPlay.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/examples/DataFrameUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
