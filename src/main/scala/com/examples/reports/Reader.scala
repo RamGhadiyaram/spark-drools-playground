@@ -2,7 +2,7 @@ package com.examples.reports
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
-trait  Reader {
+trait  Reader  extends  Serializable {
 
   def  setup(a:Map[String,String], sparkSession: SparkSession)
 

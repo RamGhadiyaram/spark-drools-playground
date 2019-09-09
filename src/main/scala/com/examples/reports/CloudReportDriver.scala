@@ -7,11 +7,11 @@ import org.apache.spark.sql.SparkSession
 object CloudReportDriver extends App with Logging{
   Logger.getLogger("org").setLevel(Level.OFF)
 
-  val spark = SparkSession.builder.
+  implicit  val spark = SparkSession.builder.
     master("local[*]")
     .appName(this.getClass.getName)
     .getOrCreate()
-  JobProcessor.trigger(parameters = Map.empty[String, String], spark: SparkSession)
+  JobProcessor.trigger(parameters = Map.empty[String, String],spark)
 
 
 //  import spark.implicits._
