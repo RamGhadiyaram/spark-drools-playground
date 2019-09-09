@@ -4,9 +4,9 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 trait Writer extends  Serializable {
 
-  def setup(a: Map[String, String], sparkSession: SparkSession) // pre
+  def setup(a: Map[String, Object], sparksession: SparkSession): Map[String, Object]
 
-  def write(a:Map[String,String],sparkSession: SparkSession, seq : Seq[DataFrame]): Boolean
+  def write(a:Map[String,Object],sparkSession: SparkSession, seq : Seq[DataFrame]): Boolean
 
-  def close(a: Map[String, String], sparkSession: SparkSession) // post
+  def close(a: Map[String, Object], sparkSession: SparkSession) // post
 }

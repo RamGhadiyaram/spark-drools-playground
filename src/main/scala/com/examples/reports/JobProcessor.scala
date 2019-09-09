@@ -3,6 +3,8 @@ package com.examples.reports
 import org.apache.spark.internal.Logging
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
+import scala.reflect.runtime.universe
+
 /**
   * responsible for processing the jobs defined.
   */
@@ -12,13 +14,13 @@ object JobProcessor extends Logging {
     * @param parameters
     * @param spark
     */
-  def trigger(parameters: Map[String, String], spark: SparkSession) {
+  def trigger(parameters: Map[String, Object], spark: SparkSession) {
     logInfo("in trigger of Job Processor " + this.getClass.getSimpleName)
     var batchnumber = 0
     while (true) {
       batchnumber = batchnumber + 1
       logInfo("executing trigger of Job Processor batch " + batchnumber + "  If you dont want to execute then define batch counter to come out of this loop ")
-      process(parameters: Map[String, String], spark: SparkSession)
+      process(parameters: Map[String, Object], spark: SparkSession)
       Thread.sleep(10000) // this number can be read from job parameters
     }
   }
@@ -29,7 +31,7 @@ object JobProcessor extends Logging {
     * @param parameters
     * @param spark
     */
-  def process(parameters: Map[String, String], spark: SparkSession): Unit = {
+  def process(parameters: Map[String, Object], spark: SparkSession): Unit = {
     logInfo("in process of Job Processor " + this.getClass.getSimpleName)
     // val c: Class[_] = Class.forName("com.examples.reports.sales.SalesReportReader").asInstanceOf[com.examples.reports.sales.SalesReportReader]
     //newify[com.examples.reports.sales.SalesReportReader]("com.examples.reports.sales.SalesReportReader")
@@ -43,22 +45,22 @@ object JobProcessor extends Logging {
 
     val reader: Reader = getFrameworkClasses(frameworkClzReader).instance.asInstanceOf[Reader]
 
-    reader.setup(parameters, spark) // pre operations like any presql
-    val seqr: Seq[DataFrame] = reader.read(parameters, spark)
-    reader.close(parameters, spark) // post operations like any post sqls
+    val job_params = reader.setup(parameters, spark) // pre operations like any presql
+    val seqr: Seq[DataFrame] = reader.read(job_params, spark)
+    reader.close(job_params, spark) // post operations like any post sqls
 
 
     val processor: Processor = getFrameworkClasses(frameworkClzProcessor).instance.asInstanceOf[Processor]
     // instantiate correspodning reader
-    processor.setup(parameters, spark) // pre operations like any presql
-    val seqp: Seq[DataFrame] = processor.process(parameters, spark, seqr)
-    processor.close(parameters, spark) // post operations like any post sqls
+   val job_paramsProcessor =  processor.setup(job_params, spark) // pre operations like any presql
+    val seqp: Seq[DataFrame] = processor.process(job_paramsProcessor, spark, seqr)
+    processor.close(job_paramsProcessor, spark) // post operations like any post sqls
 
     val writer: Writer = getFrameworkClasses(frameworkClzWriter).instance.asInstanceOf[Writer]
     // instantiate correspodning reader
-    writer.setup(parameters, spark) // pre operations like any presql
-    val jobSuccess = writer.write(parameters, spark, seqp)
-    writer.close(parameters, spark) // post operations like any post sqls
+  val job_paramsWriter =  writer.setup(job_paramsProcessor, spark) // pre operations like any presql
+    val jobSuccess = writer.write(job_paramsWriter, spark, seqp)
+    writer.close(job_paramsWriter, spark) // post operations like any post sqls
     jobSuccess match {
       case true => logInfo("Job executed successfully")
       case false | _ => logInfo("Job failed some where logically")
@@ -71,7 +73,7 @@ object JobProcessor extends Logging {
     // which will write in to report or kafka queue or s3 bucket etc...
   }
 
-  private def getFrameworkClasses(frameworkClzReader: String) = {
+  private def getFrameworkClasses(frameworkClzReader: String): universe.ModuleMirror = {
     import scala.reflect.runtime.universe
 
     val runtimeMirror = universe.runtimeMirror(getClass.getClassLoader)

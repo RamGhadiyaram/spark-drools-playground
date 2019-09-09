@@ -6,12 +6,12 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 case object SalesReportWriter extends Writer with Logging {
 
-  def setup(a: Map[String, String], sparkSession: SparkSession): Unit = { // pre
+  def setup(a: Map[String, Object], sparksession: SparkSession): Map[String, Object] = {
     logInfo("in setup ")
-
+    a
   }
 
-  def write(a: Map[String, String], sparkSession: SparkSession, seq: Seq[DataFrame]): Boolean = { // write to report and do any thing you want
+  def write(a: Map[String, Object], sparkSession: SparkSession, seq: Seq[DataFrame]): Boolean = { // write to report and do any thing you want
     logInfo("In write ... here based on job parameters we can customize the logic like write in to KAFKA or S3 SNOWFLAKE HDFS EXCEL PDF CSV TDE etc....")
     seq.head.coalesce(1).write
       .format("com.crealytics.spark.excel")
@@ -33,7 +33,7 @@ case object SalesReportWriter extends Writer with Logging {
     true
   }
 
-  def close(a: Map[String, String], sparkSession: SparkSession): Unit = { // post
+  def close(a: Map[String, Object], sparkSession: SparkSession): Unit = { // post
     // anything is there to close or post operations...
   }
 

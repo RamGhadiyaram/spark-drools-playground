@@ -6,11 +6,12 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 case object SalesReportReader extends Reader with Logging {
 
-  def setup(a: Map[String, String], sparksession: SparkSession) = {
-    logInfo("in setup ")
+  def setup(a: Map[String, Object], sparksession: SparkSession): Map[String, Object] = {
+  logInfo("in setup ")
+    a
   }
 
-  def read(a: Map[String, String], spark: SparkSession): Seq[DataFrame] = {
+  def read(a: Map[String, Object], spark: SparkSession): Seq[DataFrame] = {
 
     logInfo("in read ")
 
@@ -32,7 +33,7 @@ case object SalesReportReader extends Reader with Logging {
     Seq(df1, df2)
   }
 
-  def close(a: Map[String, String], sparkSession: SparkSession): Unit = {
+  def close(a: Map[String, Object], sparkSession: SparkSession): Unit = {
     logInfo("in close ")
   }
 

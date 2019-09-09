@@ -6,17 +6,17 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 case object SalesReportProcessor extends Processor with Logging {
 
-  def setup(a: Map[String, String], sparkSession: SparkSession): Unit = {
-    logInfo("in setup " + this.getClass.getSimpleName)
-
+  def setup(a: Map[String, Object], sparksession: SparkSession): Map[String, Object] = {
+    logInfo("in setup ")
+    a
   }
 
-  def process(a: Map[String, String], sparkSession: SparkSession, seq: Seq[DataFrame]): Seq[DataFrame] = {
+  def process(a: Map[String, Object], sparkSession: SparkSession, seq: Seq[DataFrame]): Seq[DataFrame] = {
     logInfo("in process " + this.getClass.getSimpleName)
     seq
   }
 
-  def close(a: Map[String, String], sparkSession: SparkSession): Unit = {
+  def close(a: Map[String, Object], sparkSession: SparkSession): Unit = {
     logInfo("in close ")
 
   }
