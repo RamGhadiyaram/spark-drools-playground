@@ -187,7 +187,7 @@ object DataFrameUtil {
       case "CSV" => dfToWrite.csv(s"src/test/resources/testdatasetgen/test.${format.toString.toLowerCase}")
       case "JSON" => dfToWrite.json(s"src/test/resources/testdatasetgen/test.${format.toString.toLowerCase}")
       case "XML" => dfToWrite.format("com.databricks.spark.xml").save(s"src/test/resources/testdatasetgen/test.${format.toString.toLowerCase}")
-      case _ |"PARQUET" => dfToWrite.parquet(s"src/test/resources/testdatasetgen/test.${format.toString.toLowerCase}")
+      case _ | "PARQUET" => dfToWrite.parquet(s"src/test/resources/testdatasetgen/test.${format.toString.toLowerCase}")
     }
   }
 
@@ -197,7 +197,7 @@ object DataFrameUtil {
     val logger = Logger.getLogger(this.getClass.getName)
     @transient private var instance: SparkSession = _
 
-    def getInstance(app :Option[String]): SparkSession = {
+    def getInstance(app: Option[String]): SparkSession = {
       logDebug(" instance " + instance)
       if (instance == null) {
         instance = SparkSession

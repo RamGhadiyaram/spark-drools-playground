@@ -45,7 +45,7 @@ object ParquetPlay extends Logging {
     finalDF.show(false)
     println(System.getProperty("java.io.tmpdir"))
     println(System.getProperties.toString)
-    finalDF.coalesce(2)
+    finalDF.coalesce(1)
       .write
       .mode(SaveMode.Overwrite)
       .csv(s"${System.getProperty("java.io.tmpdir")}/final.csv")

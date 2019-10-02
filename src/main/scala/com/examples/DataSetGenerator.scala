@@ -1,9 +1,9 @@
 package com.examples
 
 
-import com.examples.DataFrameUtil._
+import java.io.FileReader
 
-import com.examples.SampleDataSet._
+import com.examples.DataFrameUtil._
 import com.google.gson.JsonParser
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
@@ -23,21 +23,17 @@ import scala.util.{Random, Success, Try}
 object DataSetGenerator {
 
 
-  val logger = Logger.getLogger(this.getClass.getName)
-
-  Logger.getLogger("org").setLevel(Level.WARN)
-
   val intArray = (1 to 999)
 
+  Logger.getLogger("org").setLevel(Level.WARN)
   val longArray = (1L to 999L)
-
-
   val rangelist = intArray.mkString(":")
-
   val myRandomStringArray = Array("Long Live     " + rangelist
 
     , "Long Live Testing 1 " + rangelist
     , "Long Live Testing 2 " + rangelist, null)
+  private val logger = Logger.getLogger(this.getClass.getName)
+
   /** *
     * <pre>
     * </pre>
@@ -60,7 +56,7 @@ object DataSetGenerator {
          |
 
     | If its 75% then 0.75 need to be passed remaining 25% i.e. 0.25 will be negetive cases.
-     | Current value passed : $positiveRecordpercent
+         | Current value passed : $positiveRecordpercent
 
    """.stripMargin)
 
@@ -70,11 +66,12 @@ object DataSetGenerator {
     val numberOfPartFilesToBeGenerated = if (args.length > 0) args(3).toInt else 1
 
     val sc = spark.sparkContext
-logger.info("json is -->> \n\n" + testdatasets.toString)
-    val o = new JsonParser().parse(testdatasets).getAsJsonObject
+    import com.google.gson.stream.JsonReader
+    val reader = new JsonReader(new FileReader("C:\\Users\\ashwini\\Downloads\\codebase\\spark-general-examples\\src\\main\\resources\\testdataset.json"))
+    val o = new JsonParser().parse(reader).getAsJsonObject
 
     val myjsonasString = o.getAsJsonArray("columns").toString
-import spark.implicits._
+    import spark.implicits._
     logger.info(myjsonasString)
 
     /** If we are using > =spark 2.2 **/
@@ -84,14 +81,14 @@ import spark.implicits._
     /** If we are using < spark 2.2 *  val rdd = sc.parallelize(Seq(b))  val df = spark.read.json(rdd) **/
 
 
-    val dataFrameOfRequiredColumns = dataFrameFromJson.selectExpr("businessColumnName", "columnOrder", "type", "length")
+    val dataFrameOfRequiredColumns = dataFrameFromJson.selectExpr("businessColumnName", "orderOfColumnToBeLoadedInToDatabase", "type", "length")
 
     dataFrameOfRequiredColumns.show
 
     dataFrameOfRequiredColumns.printSchema()
 
 
-    val keyedBy = dataFrameOfRequiredColumns.rdd.keyBy(_.getAs[Long]("columnOrder"))
+    val keyedBy = dataFrameOfRequiredColumns.rdd.keyBy(_.getAs[Long]("orderOfColumnToBeLoadedInToDatabase"))
     keyedBy.foreach(x => logger.info("using keyBy-->>" + x))
     val mySortedMapByColOrder = scala.collection.immutable.TreeMap(keyedBy.collectAsMap().toArray: _*)
     val list = scala.collection.mutable.ListBuffer.empty[StructField]
@@ -138,15 +135,10 @@ import spark.implicits._
     val ided = addColumnIndex(dfReplicated, "index")
 
     moveColumnToFirstPos(ided, "index")
-
     val (training, test1) = splitDF(dfReplicated, positiveRecordpercent, 1 - positiveRecordpercent)
-
     val mycols = test1.schema.fields
-
     var test = test1;
-
     mycols.foreach(x => {
-
       test =
         x.dataType match {
           case FloatType => test.withColumn(x.name, lit(Random.nextFloat()))
@@ -160,22 +152,14 @@ import spark.implicits._
         }
 
     })
-
     val finaldf = training.union(test)
-
     logger.info(finaldf.count())
-
     test.show(false)
-
     finaldf.printSchema()
-
     finaldf.show(false)
 
-
     val dfToWrite = finaldf.coalesce(numberOfPartFilesToBeGenerated).write.mode(SaveMode.Overwrite)
-
     val allFormats = Array("PARQUET", "AVRO", "CSV", "JSON", "XML")
-
     format match {
 
       case "ALL" =>
@@ -184,8 +168,6 @@ import spark.implicits._
       case _ =>
         logger.info(s"Writing $format format } ");
         writeToFileFormats(format, dfToWrite)
-    } //end of main
-
+    }
   }
-
 }

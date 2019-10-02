@@ -7,7 +7,7 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 case object SalesReportReader extends Reader with Logging {
 
   def setup(a: Map[String, Object], sparksession: SparkSession): Map[String, Object] = {
-  logInfo("in setup ")
+  logInfo("in setup " + a)
     a
   }
 
@@ -16,21 +16,18 @@ case object SalesReportReader extends Reader with Logging {
     logInfo("in read ")
 
     import spark.implicits._
+    val sales = Seq(
+      ("Dallas", 2016, 100d),
+      ("Dallas", 2017, 120d),
+      ("Sanjose", 2017, 200d),
+      ("Plano", 2015, 50d),
+      ("Plano", 2016, 50d),
+      ("Newyork", 2016, 150d),
+      ("Toronto", 2017, 50d)
 
-    val df1 = Seq(
-      ("2019-01-01 00:00:00", "7056589658"),
-      ("2019-02-02 00:00:00", "7778965896")
-    ).toDF("DATE_TIME", "PHONE_NUMBER")
-
-    df1.show()
-
-    val df2 = Seq(
-      ("2019-01-01 01:00:00", "194.67.45.126"),
-      ("2019-02-02 00:00:00", "102.85.62.100"),
-      ("2019-03-03 03:00:00", "102.85.62.100")
-    ).toDF("DATE_TIME", "IP")
-    df2.show
-    Seq(df1, df2)
+    ).toDF("city", "year", "saleAmount")
+    sales.printSchema()
+    Seq(sales)
   }
 
   def close(a: Map[String, Object], sparkSession: SparkSession): Unit = {
